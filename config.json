@@ -1,0 +1,44 @@
+{
+	"fetch_data" : {
+		"fetch" : false,
+		"tickers" : [""],
+		"time_window" : "daily"
+	},
+	"load_data": {
+		"data_type" : "",
+		"tickers" : [""]
+	},
+	"classify_data" : {
+		"classify" : false,
+		"target_col" : "",
+		"t_in_future" : 40
+	},
+	"process_data" : {
+		"split_rate" : 0.8,
+		"target_col" :  "",
+		"seq_len" : 50,
+		"validation_rate" : 0.1
+	},
+	"model_type" : "",
+	"clf_model" : {
+		"type" : "",
+		"model_params" : {
+
+		},
+		"load_model_filename" : ""
+	},
+	"nn_model": {
+		"loss": "mse",
+		"load_model_filename" : "",
+		"optimizer": "adam",
+		"metrics" : [""],
+		"training" : {
+			"epochs" : 5,
+			"batch_size" : 64,
+			"use_train_gen" : false
+		},
+		"layers": [
+
+		]
+	}
+}
